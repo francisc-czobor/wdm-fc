@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tables and forms</title>
+	<link rel="stylesheet" type="text/css" href="./demo.css">
+</head>
+<body>
+	<!-- table element -->
+	<table class="ceva">
+		<thead>
+			<th>nr ctr</th>
+			<th>nume</th>
+			<th>prenume</th>
+			<th>varsta</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Czobor</td>
+				<td>Franci</td>
+				<td>22</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Ciocău</td>
+				<td>Alex</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Ureche</td>
+				<td>Tiberiu</td>
+				<td>17</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Kars</td>
+				<td>Asena</td>
+				<td>20</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<!-- form -->
+	<p>haha acibasiubcvas <span class="bg">siducbasiudbcaiubc</span> asdibcviasudb</p>
+	<form>
+		<p>Buna ziua! Completati fmm</p>
+		<label for="text">Nume:</label>
+		<input id="text" type="text" name="text-input" placeholder="max 32 chars"><br>
+
+		<label for="ch">Bifeaza!</label>
+		<input id="ch" type="checkbox" name="check-input"><br>
+
+		<textarea name="area-input"></textarea><br>
+
+		<label for="rad">Radios</label>
+		<div id="rad" class="bg">
+			<input type="radio" name="radio-input" value="1"><br>
+			<input type="radio" name="radio-input" value="2"><br>
+			<input type="radio" name="radio-input" value="3"><br>
+		</div>
+		<input type="email" name="email-input"><br>
+
+		<button type="submit">Done</button><br>
+		<input type="button" name="button-input" value="Done 2"><br>
+	</form>
+	<br>
+	<!-- login form -->
+	<form>
+		<!-- `required` and `hidden` are boolean attributes -->
+		<input type="text" name="bau" value="cica caca" hidden>
+		<input type="email" placeholder="username" required><br>
+		<input type="password" placeholder="password" hidden><br>
+		<input type="submit" value="Login">
+	</form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+/* CSS - Cascading Style Sheets */
+
+/* id selector */
+#text {
+	background-color: blue;
+}
+
+/* class selector */
+.ceva {
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.bg {
+	background-color: grey;
+}
+
+/* tag selector */
+input {
+	color: red;
+}
+
+/* all the tds and ths */
+td, th {
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+}
+
+/* all the paragraphs inside forms */
+form p {
+	color: green;
+}
