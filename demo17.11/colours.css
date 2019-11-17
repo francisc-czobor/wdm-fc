@@ -1,0 +1,64 @@
+body {
+	/*background-image: url(https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555275134/shape/mentalfloss/57159-istock-486456250.jpg);*/
+	font-family: 'Acme', sans-serif;
+}
+
+#t1 {
+	color: red;
+	font-family: monospace;
+}
+
+#t2 {
+	color: aqua;
+}
+
+#t3 {
+	color: rgb(66, 33, 99);
+	font-family: sans-serif;
+}
+
+#t4 {
+	color: rgba(66, 33, 99, 0.1);
+}
+
+#t5 {
+	color: #663399;
+	font-family: cursive;
+}
+
+#t6 {
+	color: #663399aa;
+	font-family: fantasy;
+}
+
+#t7 {
+	color: #f07200;
+}
+
+#t8 {
+	color: #aabbcc;
+}
+
+#t9 {
+	color: #aabbccdd;
+}
+
+h1 {
+	text-decoration: underline;
+}
+
+.div-colour {
+	background-color: aqua;
+}
+
+span {
+	color: rebeccapurple;
+}
+
+p span {
+	color: red;
+}
+
+[required] {
+	background-color: #546782;
+}
