@@ -1,0 +1,27 @@
+body {
+	background-color: powderblue;
+}
+
+.icon {
+	font-size: 2em;
+	color: black;
+}
+
+.footer {
+	background-color: #ED9390;
+}
+
+.content {
+	background-color: whitesmoke;
+	padding: 2em;
+	border-radius: 2.5rem;
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.bg-roz {
+	background-color: #ED9390;
+}
+
+.first-row {
+	margin-top: 7em;
+}
