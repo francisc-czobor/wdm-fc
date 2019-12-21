@@ -8,7 +8,9 @@ function addNew() {
 function remove() {
   var remName = prompt('Ce nume doresti sa stergi?');
   var index = roster.indexOf(remName);
-  roster.splice(index, 1);
+  if (index !== -1) {
+    roster.splice(index, 1);
+  }
 }
 
 function display() {
