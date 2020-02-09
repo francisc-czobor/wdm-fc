@@ -1,12 +1,3 @@
-#####################################
-#### PART 9: FUNCTION EXERCISES #####
-#####################################
-
-
-# Complete the tasks below by writing functions! Keep in mind, these can be
-# really tough, its all about breaking the problem down into smaller, logical
-# steps.
-
 #####################
 ## -- PROBLEM 1 -- ##
 #####################
@@ -16,13 +7,22 @@
 
 # For example:
 
-# arrayCheck([1, 1, 2, 3, 1]) → True
-# arrayCheck([1, 1, 2, 4, 1]) → False
-# arrayCheck([1, 1, 2, 1, 2, 3]) → True
 
-def arrayCheck(nums):
-    # CODE GOES HERE
+def array_check(nums):
+    for index in range(len(nums) - 2):
+        if (
+                nums[index] == 1
+                and nums[index + 1] == 2
+                and nums[index + 2] == 3
+        ):
+            return True
+    else:
+        return False
 
+
+print(array_check([1, 1, 2, 3, 1]))
+print(array_check([1, 3, 1, 2, 4, 1]))
+print(array_check([1, 1, 2, 1, 2, 3]))
 
 #####################
 ## -- PROBLEM 2 -- ##
@@ -33,12 +33,14 @@ def arrayCheck(nums):
 
 # For example:
 
-# stringBits('Hello') → 'Hlo'
-# stringBits('Hi') → 'H'
-# stringBits('Heeololeo') → 'Hello'
 
-def stringBits(str):
-  # CODE GOES HERE
+def string_bits(string):
+    return string[::2]  # string slicing
+
+
+print(string_bits('Hello'))
+print(string_bits('Hi'))
+print(string_bits('ssaaaaaaaaaaaarrppiilliiiiiiiiiiiiiiiii'))
 
 
 #####################
@@ -49,17 +51,16 @@ def stringBits(str):
 # of the other string, ignoring upper/lower case differences (in other words, the
 # computation should not be "case sensitive").
 #
-# Note: s.lower() returns the lowercase version of a string.
-#
 # Examples:
 #
-# end_other('Hiabc', 'abc') → True
-# end_other('AbC', 'HiaBc') → True
-# end_other('abc', 'abXabc') → True
-
-
 def end_other(a, b):
-  # CODE GOES HERE
+
+    pass
+
+
+print(end_other('Hiabc', 'abc'))
+print(end_other('AbC', 'HiaBc'))
+print(end_other('abc', 'abXabc'))
 
 #####################
 ## -- PROBLEM 4 -- ##
@@ -73,6 +74,7 @@ def end_other(a, b):
 # doubleChar('Hi-There') → 'HHii--TThheerree'
 
 def doubleChar(str):
+    pass
   # CODE GOES HERE
 
 
@@ -98,8 +100,10 @@ def doubleChar(str):
 # no_teen_sum(2, 1, 14) → 3
 
 def no_teen_sum(a, b, c):
+    pass
   # CODE GOES HERE
 def fix_teen(n):
+    pass
   # CODE GOES HERE
 
 #####################
@@ -115,4 +119,5 @@ def fix_teen(n):
 # count_evens([1, 3, 5]) → 0
 
 def count_evens(nums):
+    pass
   # CODE GOES HERE
