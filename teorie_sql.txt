@@ -1,0 +1,38 @@
+	# CARTI #
+
+   *isbn => primary key
+	titlu
+   &id_autor => foreign key
+	nr_pagini
+	an
+	editura
+	hardcover
+
+
+	# AUTORI #
+
+   *cnp
+	nume
+	prenume
+
+da-mi titlurile cartilor scrise de autorul x
+
+	select titlu from carti where id_autor=<un anumit cnp>;
+
+da-mi numele autorilor care au scris carti in 2012
+
+	select nume from (select unique id_autor from carti where an=2012);
+
+1970209420028
+
+Tipuri de relatii:
+
+- one to one
+- one to many (/ many to one)
+- many to many
+
+	# IMPRUMUTARE #
+
+  *&id_carte
+  *&id_imprumutator
+   *data
