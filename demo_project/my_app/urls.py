@@ -1,8 +1,9 @@
 from django.urls import path
 
-from .views import home
+from .views import home, ceva, tabele
 
 urlpatterns = [
-    path('', home),
     path('home/', home),
+    path('tabele/', tabele),
+    path('', ceva),
 ]

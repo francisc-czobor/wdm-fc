@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabele</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h1>Books</h1>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Issue Date</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for book in books %}
+        <tr>
+          <td>{{ book.title }}</td>
+          <td>{{ book.author }}</td>
+          <td>{{ book.issue_date }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    <hr>
+    <h3>Create a new book</h3>
+    <form method="post">
+      {% csrf_token %}
+      {{ book_form.as_p }}
+      <input class="btn btn-primary" type="submit">
+    </form>
+    <hr>
+    <h1>Customers</h1>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Telephone</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for customer in customers %}
+        <tr>
+          <td>{{ customer.name }}</td>
+          <td>{{ customer.dob }}</td>
+          <td>{{ customer.tel }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+
+    <h1>Loans</h1>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Book</th>
+        <th>Customer</th>
+        <th>Date</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for loan in loans %}
+        <tr>
+          <td>{{ loan.book }}</td>
+          <td>{{ loan.customer }}</td>
+          <td>{{ loan.loan_date }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+
+    <h1>Books borrowed by Franci</h1>
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Issue Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for book in bbbf %}
+          <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.issue_date }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+  </div>
+</body>
+</html>
