@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
+{% extends 'base.html' %}
+
+{% block title_block %}
   <title>Tabele</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-<body>
+{% endblock %}
+
+{% block body_block %}
   <div class="container">
-    <h1>Books</h1>
+    <h1>Books: {{ books | length }} books in total</h1>
     <table class="table">
       <thead>
       <tr>
@@ -19,7 +19,7 @@
       <tbody>
       {% for book in books %}
         <tr>
-          <td>{{ book.title }}</td>
+          <td>{{ book.title | upper }}</td>
           <td>{{ book.author }}</td>
           <td>{{ book.issue_date }}</td>
         </tr>
@@ -94,5 +94,4 @@
         </tbody>
       </table>
   </div>
-</body>
-</html>
+{% endblock %}
