@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load get_params %}
+{% block title %}
+  <title>Home</title>
+{% endblock %}
+{% block content %}
+  <div class="container">
+    <h1>Welcome to my blog!</h1>
+    <br>
+    {{ ceva }}<br>
+    {{ altceva }}<br>
+    <a class="btn btn-primary" href="{% url 'blog:index' %}{% get_params ceva=ceva altceva=altceva %}">Link cu query strings</a>
+  </div>
+{% endblock %}

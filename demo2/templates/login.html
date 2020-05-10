@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}
+  <title>Login</title>
+{% endblock %}
+{% block content %}
+  <div class="container">
+    <h1 class="display-1">Sign-in!</h1>
+    <form method="post">
+      {% csrf_token %}
+      <input class="form-control" type="text" name="username" placeholder="Enter your username" required>
+      <input class="form-control" type="password" name="password" placeholder="Enter your password" required>
+      <input type="submit" class="btn btn-primary">
+    </form>
+  </div>
+{% endblock %}
